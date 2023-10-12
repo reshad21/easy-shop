@@ -2,6 +2,7 @@
 import { afterLoginNavData, beforeLoginNavData } from "@/data/navData";
 import useTheme from "@/hooks/useTheme";
 import Link from "next/link";
+import { MdOutlineDarkMode } from 'react-icons/md';
 
 const Navber = () => {
     const user = null;
@@ -54,6 +55,9 @@ const Navber = () => {
                         <li><a>Settings</a></li>
                         <li><a>Logout</a></li>
                     </ul>
+                </div>
+                <div className="dropdown dropdown-end">
+                    <button onClick={toggleTheme} checked={theme == "dark"}><MdOutlineDarkMode size={30} /></button>
                 </div>
             </div>
         </div>
