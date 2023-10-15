@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <div className="flex min-h-screen flex-col justify-between">
             <Navber />
-            <main className='mt-5 max-w-7xl mx-auto'>{children}</main>
+              <main className='mt-5 max-w-7xl mx-auto'>{children}</main>
             <Footer />
           </div>
         </Providers>
