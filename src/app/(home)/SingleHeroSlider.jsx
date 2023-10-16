@@ -1,6 +1,7 @@
 
-const SingleHeroSlider = ({ slider }) => {
-    const { bg, title } = slider || {};
+const SingleHeroSlider = ({ data }) => {
+    const { bg, title } = data;
+    console.log(bg);
     return (
         <>
             <div
@@ -8,10 +9,9 @@ const SingleHeroSlider = ({ slider }) => {
                 style={{
                     backgroundImage: `url(${bg})`,
                 }}
-            >
-                <div className="absolute top-1/2 -translate-y-1/2 text-center w-full text-white main-slider__details">
-                    <h1>{title}</h1>
-                </div>
+            ></div>
+            <div className="absolute top-1/2 -translate-y-1/2 text-center w-full text-white main-slider__details">
+                <h1>{title}</h1>
             </div>
 
         </>
